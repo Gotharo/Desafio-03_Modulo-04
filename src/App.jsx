@@ -1,12 +1,16 @@
 import NavBar from "./Components/NavBar"
 import Home from "./Components/Home"
 import Footer from "./Components/Footer"
+import RegisterPage from "./Components/auth/RegisterPage"
+import LoginPage from "./Components/auth/LoginPage"
 
 function App() {
     return (
-        <div>
+        <div className="min-h-screen flex flex-col">
             <NavBar />
-            <Home />
+            {/* <Home /> */}
+            <RegisterPage />
+            {/* <LoginPage /> */}
             <Footer />
         </div>
     )
