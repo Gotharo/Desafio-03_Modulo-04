@@ -3,6 +3,7 @@ import Home from "./Components/Home"
 import Footer from "./Components/Footer"
 // import RegisterPage from "./Components/auth/RegisterPage"
 // import LoginPage from "./Components/auth/LoginPage"
+import Cart from "./Components/Cart"
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
             <NavBar />
             {/* <Home /> */}
             {/* <RegisterPage /> */}
-            <LoginPage />
+            {/* <LoginPage /> */}
+            <Cart />
             <Footer />
         </div>
     )

@@ -1,25 +1,27 @@
 import CardPizza from "./CardPizza"
 import Header from "./Header"
-import data from "../data/data"
+// import data from "../data/data"
+import pizzas from "../data/pizzas"
 
 
 function Home() {
     return (
         <div>
             <Header />
-            <div className="flex flex-row justify-center">
+            <div className="grid grid-cols-3 gap-6 justify-items-center">
 
-                {data.map(pizza => {
+                {pizzas.map((pizza) => {
                     return (
-                        <div> 
+                        
                         <CardPizza
-                            key={pizza.name}
+                            key={pizza.id}
                             name={pizza.name}
                             price={pizza.price}
                             ingredients={pizza.ingredients}
                             img={pizza.img}
+                            desc={pizza.desc}
                         />
-                        </div>
+                        
                     )
                 })}
             </div>
